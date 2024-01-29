@@ -1,0 +1,16 @@
+{
+  "name": "shared-libs-config-file-storage",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "shared-libs/config/file-storage/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["shared-libs/config/file-storage/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}
